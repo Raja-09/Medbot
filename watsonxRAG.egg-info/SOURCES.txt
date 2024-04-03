@@ -1,0 +1,5 @@
+setup.py
+watsonxRAG.egg-info/PKG-INFO
+watsonxRAG.egg-info/SOURCES.txt
+watsonxRAG.egg-info/dependency_links.txt
+watsonxRAG.egg-info/top_level.txt
