@@ -11,7 +11,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B")
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B")
-print("hello")
 df["input_ids"] = df["symptoms"].apply(
     lambda x: tokenizer.encode(x, add_special_tokens=True)
 )
