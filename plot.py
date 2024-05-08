@@ -1,8 +1,19 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-time_to_respond = [41, 27, 30, 56, 27, 35, 41, 33,39]
-length_of_query = [3, 18, 17, 42, 19, 24, 30, 40,15]
+time_to_respond = [09.239320,
+ 09.491535,
+ 12.463158,
+ 09.690260]
+length_of_query = [24,
+  45,
+  45,
+  45]
+
+ 
+
+  
+
 
 # Create scatter plot
 plt.figure(figsize=(8, 6))

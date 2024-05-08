@@ -29,7 +29,7 @@ st.markdown(
 def initialize_lang_chain(temperature):
     llm = LangChainInterface(
         credentials=creds,
-        model="meta-llama/llama-2-70b-chat",
+        model="meta-llama/llama-3-8b-instruct",
         params={"decoding_method": "sample", "max_new_tokens": 300, "temperature": temperature},
         project_id="111b2e25-a82c-45dc-ab80-e48629f202fd",
     )
@@ -91,7 +91,7 @@ def main():
     index = load_pdf()
     index_loaded_time = datetime.now()
     print("Loaded pdf in:",index_loaded_time - start_time)
-    llm = initialize_lang_chain(0.2)
+    llm = initialize_lang_chain(0.3)
     chain = create_retrieval_qa_chain(llm, index)
     chat_interface(chain)
 
