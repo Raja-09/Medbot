@@ -7,3 +7,4 @@ pypdf
 python-dotenv
 datetime
 streamlit
+ibm_watson_machine_learning
